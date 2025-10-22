@@ -1,5 +1,54 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+
+body {
+  font-family: "Times New Roman", serif;
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 15px;
+  width: 360px;
+  height: 520px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.card-symbol {
+  font-size: 5rem;
+  color: red;
+}
+
+.card-symbol.top {
+  align-self: flex-start;
+}
+
+.card-symbol.bottom {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+.card-value {
+  font-size: 10rem;
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.controls input {
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  padding: 4px;
 }

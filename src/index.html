@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Poker game</title>
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -14,19 +14,21 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+  <body class="bg-success d-flex flex-column justify-content-center align-items-center vh-100">
+    <div class="controls mb-4 text-center">
+      <button id="new-card-btn" class="btn btn-light fw-bold me-3">♣ New Card ♠</button>
+
+      <label class="text-white me-2">Width:</label>
+      <input type="number" id="width-input" value="360" min="180" max="800">
+
+      <label class="text-white me-2">Height:</label>
+      <input type="number" id="height-input" value="520" min="300" max="1200">
+    </div>
+
+    <div class="card-container" id="card">
+      <div id="top-symbol"></div>
+      <div id="card-value">A</div>
+      <div id="bottom-symbol">♥</div>
     </div>
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
