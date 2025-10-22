@@ -51,39 +51,4 @@ window.onload = function () {
   setInterval(generateCard, 10000);
 
 
-  /*
-  let miDiv = document.querySelector('#miDiv');
-  let botonUno = document.querySelector('#botonUno')
-  let botonDos = document.querySelector('#botonDos')
-
-
-  botonUno.addEventListener('click', function(){
-    miDiv.classList.add('fondoVerde');
-    miDiv.classList.replace('fondoRojo','fondoVerde')
-    console.log('verde');
-  })
-
-  botonDos.addEventListener('click', function(){
-    miDiv.classList.add('fondoRojo');
-    miDiv.classList.replace('fondoVerde','fondoRojo')
-    console.log('rojo');
-  })
-
-
-  let items = document.querySelectorAll('li');
-  let botonCompletar= document.querySelector('#botonCompletar');
-  let botonReset = document.querySelector('#botonReset');
-
-  botonCompletar.addEventListener('click', function(){
-    for (let i = 0; i < items.length; i++) {
-      items[i].style.textDecoration = 'line-through';
-    }
-  })
-
-  botonReset.addEventListener('click', function(){
-    for (let i = 0; i < items.length; i++) {
-      items[i].style.textDecoration = 'none';
-    }
-  })
-  */
 };
